@@ -1,140 +1,55 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071d3b">
-  <meta name="description" content="النورس للتكييف والتبريد للشاحنات — حلول التبريد والتكييف وقطع الأنظمة في أبو علندا، عمّان، الأردن.">
-  <title>النورس | التكييف والتبريد للشاحنات</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{--navy:#071d3b;--blue:#0878d1;--ice:#eaf6ff;--ink:#15243a;--muted:#63748b;--white:#fff;--line:#dce8f2}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:"Cairo",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.8}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1140px,92%);margin:auto}
-    .top{background:var(--navy);color:#d9eaff;font-size:.88rem;padding:8px 0}.top .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-    nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy);font-size:1.2rem}
-    .logo{width:58px;height:58px;border-radius:12px;object-fit:contain;background:#fff;border:1px solid var(--line);padding:3px;box-shadow:0 8px 22px #0878d11c}
-    .links{display:flex;gap:22px;align-items:center;font-size:.92rem;font-weight:700}.links a:hover{color:var(--blue)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border-radius:12px;background:var(--blue);color:#fff;font-weight:800;border:1px solid var(--blue);transition:.2s}
-    .btn:hover{transform:translateY(-2px);filter:brightness(.96)}.btn.outline{background:transparent;color:#fff;border-color:#ffffff70}.btn.dark{background:var(--navy);border-color:var(--navy)}
-    .hero{background:radial-gradient(circle at 15% 20%,#1b70ad66,transparent 34%),linear-gradient(120deg,#06172f,#0a3158 60%,#0878d1);color:#fff;overflow:hidden}
-    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center;padding:76px 0}
-    .eyebrow{display:inline-block;background:#ffffff18;border:1px solid #ffffff35;padding:5px 13px;border-radius:999px;color:#d7efff;font-size:.88rem}
-    h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.25;margin:20px 0 16px;font-weight:800;letter-spacing:-1px}h1 span{color:#76d4ff}
-    .hero p{font-size:1.08rem;color:#d9e9f8;max-width:600px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-    .hero-photo{position:relative}.hero-photo img{width:100%;height:390px;object-fit:cover;border-radius:28px;border:1px solid #ffffff55;box-shadow:0 25px 70px #00102480}
-    .photo-note{font-size:.78rem;color:#d9e9f8;margin-top:8px}
-    section{padding:72px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 34px}.section-head .kicker{color:var(--blue);font-weight:800}.section-head h2{font-size:clamp(1.7rem,3vw,2.55rem);color:var(--navy);margin:7px 0}.section-head p{color:var(--muted);margin:0}
-    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{padding:24px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 8px 25px #09284b08}
-    .feature .ico{width:48px;height:48px;display:grid;place-items:center;background:var(--ice);color:var(--blue);border-radius:14px;font-size:1.5rem}.feature h3{margin:12px 0 5px;color:var(--navy)}.feature p{margin:0;color:var(--muted);font-size:.94rem}
-    .tint{background:#f5faff}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 12px 30px #0a2b4b0b}.card img{display:block;width:100%;height:215px;object-fit:cover}.card-body{padding:19px}.card h3{margin:0 0 7px;color:var(--navy)}.card p{margin:0;color:var(--muted);font-size:.94rem}.tag{display:inline-block;background:#eaf6ff;color:#0867b1;font-size:.76rem;font-weight:800;padding:4px 9px;border-radius:7px;margin-bottom:9px}
-    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.gallery figure{margin:0;border-radius:17px;overflow:hidden;background:#eef6fc;border:1px solid var(--line)}.gallery img{width:100%;height:225px;object-fit:cover;display:block}.gallery figcaption{padding:12px 14px;font-weight:700;color:var(--navy)}.real-note{padding:13px 16px;background:#fff7e8;border:1px solid #f1d7a5;color:#77521a;border-radius:12px;margin-top:18px;font-size:.9rem}
-    .contact{background:linear-gradient(120deg,#06172f,#0a3158);color:#fff}.contact .section-head h2{color:#fff}.contact .section-head p{color:#d2e2f3}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px}.contact-box{padding:26px;border:1px solid #ffffff25;background:#ffffff0a;border-radius:20px}.contact-box h3{margin-top:0}.contact-line{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #ffffff20}.contact-line:last-child{border:0}.contact-line b{display:block}.contact-line span{color:#d0e1f1;font-size:.9rem}.map{width:100%;height:100%;min-height:310px;border:0;border-radius:18px;background:#eaf6ff}
-    footer{background:#041226;color:#b7cbe0;padding:22px 0;font-size:.87rem}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    .wa-float{position:fixed;bottom:18px;left:18px;z-index:20;background:#20b765;color:#fff;padding:12px 17px;border-radius:999px;font-weight:800;box-shadow:0 8px 24px #0003}
-    @media(max-width:850px){.hero-grid,.contact-grid{grid-template-columns:1fr}.hero-grid{padding:50px 0}.hero-photo img{height:300px}.features,.services,.gallery{grid-template-columns:repeat(2,1fr)}.links{gap:11px}.links a:not(.btn){display:none}}
-    @media(max-width:560px){.features,.services,.gallery{grid-template-columns:1fr}.top .wrap{justify-content:center;text-align:center}.brand{font-size:1rem}.logo{width:42px;height:42px}.links .btn{padding:9px 12px;font-size:.82rem}section{padding:52px 0}.hero-photo img{height:240px}.card img,.gallery img{height:220px}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>النورس | كتالوج التكييف والتبريد للشاحنات</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--n:#071d3b;--b:#0878d1;--p:#f2f8fd;--line:#dce8f2;--muted:#63748b}*{box-sizing:border-box}body{margin:0;font-family:Cairo,Arial,sans-serif;color:#15243a;line-height:1.8}a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}.top{background:var(--n);color:#d9eaff;padding:7px 0;font-size:.85rem}.top .wrap,nav,.brand,.links,.tools{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}header{position:sticky;top:0;background:#ffffffed;z-index:5;border-bottom:1px solid var(--line)}nav{padding:10px 0}.brand{justify-content:flex-start;font-weight:800;color:var(--n)}.logo{width:48px;height:48px;object-fit:contain;border:1px solid var(--line);border-radius:10px;padding:3px}.links{font-weight:700;font-size:.9rem}.btn{display:inline-block;background:var(--b);color:#fff;padding:9px 15px;border-radius:11px;font-weight:800;border:0;cursor:pointer}.hero{background:linear-gradient(120deg,#06172f,#0a3158 60%,#0878d1);color:white}.hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:32px;padding:55px 0}.hero h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.3;margin:10px 0}.hero h1 span{color:#76d4ff}.hero p{color:#d9e9f8}.hero img{width:100%;height:320px;object-fit:cover;border-radius:22px}.actions{display:flex;gap:10px;flex-wrap:wrap}.section{padding:55px 0}.tint{background:var(--p)}.head{text-align:center;margin:0 auto 26px;max-width:700px}.head strong{color:var(--b)}.head h2{color:var(--n);margin:5px 0;font-size:clamp(1.6rem,3vw,2.4rem)}.head p{color:var(--muted);margin:0}.categories,.products,.features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.category,.product,.feature{border:1px solid var(--line);border-radius:17px;background:#fff;overflow:hidden;box-shadow:0 8px 24px #09284b0a}.category{padding:0;text-align:right;cursor:pointer;font:inherit;transition:.18s}.category:hover,.product:hover{transform:translateY(-3px)}.category img{width:100%;height:170px;object-fit:contain;background:#f2f7fb;display:block}.body{padding:14px}.category h3,.product h3,.feature h3{margin:0;color:var(--n);font-size:1.05rem}.category p,.product p,.feature p{margin:4px 0;color:var(--muted);font-size:.88rem}.count{display:inline-block;background:#eaf6ff;color:#0867b1;padding:2px 9px;border-radius:8px;font-size:.8rem;font-weight:800;margin-top:7px}.tools{margin-bottom:16px}.search{flex:1;min-width:200px;border:1px solid var(--line);border-radius:11px;padding:11px;font:inherit}.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}.filter{background:white;border:1px solid var(--line);padding:6px 12px;border-radius:99px;cursor:pointer;font:inherit;font-weight:700}.filter.active{background:var(--n);color:white}.product img{display:block;width:100%;height:220px;object-fit:contain;padding:8px;background:#f2f7fb;cursor:zoom-in}.product .btn{display:block;text-align:center;margin-top:12px}.empty{text-align:center;padding:25px;color:var(--muted);background:white;border-radius:12px}.features{grid-template-columns:repeat(3,1fr)}.feature{padding:20px}.contact{background:var(--n);color:white}.contact .head h2{color:white}.contact .head p{color:#d2e2f3}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-box{border:1px solid #ffffff30;border-radius:16px;padding:22px}.contact-box p{margin:7px 0}.map{width:100%;height:280px;border:0;border-radius:16px}footer{background:#041226;color:#b7cbe0;padding:20px 0;font-size:.85rem}.wa{position:fixed;bottom:16px;left:16px;background:#20b765;color:white;padding:10px 15px;border-radius:99px;z-index:8}.modal{display:none;position:fixed;inset:0;background:#06172fee;z-index:20;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modalbox{background:white;border-radius:16px;padding:16px;width:min(850px,100%);max-height:90vh;overflow:auto}.modalbar{display:flex;justify-content:space-between;align-items:center}.modal img{width:100%;max-height:72vh;object-fit:contain;background:var(--p)}.close{font-size:1.5rem;border:0;border-radius:8px;cursor:pointer}
+@media(max-width:800px){.hero-grid,.contact-grid{grid-template-columns:1fr}.categories,.products,.features{grid-template-columns:repeat(2,minmax(0,1fr))}.links a:not(.btn){display:none}.hero img{height:260px}}
+@media(max-width:540px){.categories,.products,.features{grid-template-columns:1fr}.hero-grid{padding:38px 0}.section{padding:42px 0}.category img{height:200px}}
+</style>
 </head>
 <body>
-  <div class="top"><div class="wrap"><span>❄ حلول التكييف والتبريد للشاحنات</span><span>أبو علندا، عمّان — الأردن</span></div></div>
-  <header><nav class="wrap">
-    <a class="brand" href="#home"><img class="logo" src="images/logo.jpg" alt="شعار النورس"><span>النورس<small style="display:block;font-size:.72rem;color:#60748c;font-weight:600">للتكييف والتبريد</small></span></a>
-    <div class="links"><a href="#services">خدماتنا</a><a href="#gallery">معرض الصور</a><a href="#about">عن الشركة</a><a class="btn" href="https://wa.me/962796070113?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85" target="_blank" rel="noopener">تواصل واتساب</a></div>
-  </nav></header>
-
-  <main>
-    <section class="hero" id="home"><div class="wrap hero-grid">
-      <div><span class="eyebrow">خبرة • جودة • حلول عملية</span>
-        <h1>تبريد يعتمد عليه،<br><span>لشاحنات تعمل بثقة</span></h1>
-        <p>شركة النورس للتكييف والتبريد للشاحنات — حلول وخدمات في مجال أنظمة التكييف والتبريد، مع اهتمام بجودة العمل واحتياجات قطاع النقل.</p>
-        <div class="actions"><a class="btn" href="https://wa.me/962796070113" target="_blank" rel="noopener">اطلب استفسارك عبر واتساب</a><a class="btn outline" href="tel:+962796070113">اتصل بنا الآن</a></div>
-      </div>
-      <div class="hero-photo"><img src="images/condenser.jpg" alt="مكثف تكييف من منتجات النورس" loading="eager"><div class="photo-note">من صور قطع التكييف والتبريد التي زوّدنا بها المستخدم.</div></div>
-    </div></section>
-
-    <section id="about"><div class="wrap"><div class="section-head"><span class="kicker">النورس للتبريد</span><h2>حلول مصممة لاحتياجات النقل</h2><p>نعمل على تقديم تجربة واضحة للعملاء من خلال التواصل المباشر وفهم احتياجاتهم في التكييف والتبريد للشاحنات.</p></div>
-      <div class="features">
-        <article class="feature"><div class="ico">❄</div><h3>أنظمة التبريد</h3><p>التعريف بخيارات وحلول تبريد الشاحنات ومكوّنات الأنظمة حسب الحاجة.</p></article>
-        <article class="feature"><div class="ico">🛠</div><h3>خدمات ومكوّنات</h3><p>الاستفسار عن خدمات التكييف والتبريد والقطع المناسبة لنوع المركبة والنظام.</p></article>
-        <article class="feature"><div class="ico">☎</div><h3>تواصل مباشر</h3><p>اتصل أو أرسل رسالة واتساب لتوضيح طلبك والحصول على معلومات من الشركة.</p></article>
-      </div>
-    </div></section>
-
-    <section class="tint" id="services"><div class="wrap"><div class="section-head"><span class="kicker">ماذا نقدم؟</span><h2>الخدمات والمنتجات</h2><p>صور توضيحية للمجالات التي يمكن الاستفسار عنها. يرجى التواصل لتأكيد توفر المنتج أو الخدمة المطلوبة.</p></div>
-      <div class="services">
-        <article class="card"><img src="images/condenser.jpg" alt="مكثف تكييف" loading="lazy"><div class="card-body"><span class="tag">النقل المبرد</span><h3>حلول تبريد الشاحنات</h3><p>التعرّف على خيارات التبريد المناسبة للشاحنات واحتياجات نقل البضائع.</p></div></article>
-        <article class="card"><img src="images/compressor-1.jpg" alt="كمبروسر تكييف" loading="lazy"><div class="card-body"><span class="tag">تكييف وتبريد</span><h3>أنظمة التكييف</h3><p>استفسر عن مكوّنات أنظمة التكييف والتبريد المناسبة لاحتياجك.</p></div></article>
-        <article class="card"><img src="images/receiver-drier.jpg" alt="فلتر مجفف لنظام التكييف" loading="lazy"><div class="card-body"><span class="tag">قطع ومكوّنات</span><h3>قطع أنظمة التبريد</h3><p>أرسل نوع الشاحنة أو صورة القطعة المطلوبة ليسهل الاستفسار عنها.</p></div></article>
-      </div>
-    </div></section>
-
-    <section id="gallery"><div class="wrap"><div class="section-head"><span class="kicker">معرض الصور</span><h2>من عالم التبريد والنقل</h2><p>مجموعة من صور قطع التكييف والتبريد التي زوّدنا بها المستخدم.</p></div>
-      <div class="gallery">
-       <figure>
-  <img src="condenser.jpg" alt="مكثف تكييف" loading="lazy">
-  <figcaption>مكثفات التكييف</figcaption>
-</figure>
-
-<figure>
-  <img src="receiver-drier.jpg" alt="فلتر مجفف" loading="lazy">
-  <figcaption>فلاتر ومجففات التكييف</figcaption>
-</figure>
-
-<figure>
-  <img src="compressor-1.jpg" alt="كمبروسر تكييف" loading="lazy">
-  <figcaption>كمبروسرات التكييف</figcaption>
-</figure>
-
-<figure>
-  <img src="evaporator-1.jpg" alt="مبخر تكييف" loading="lazy">
-  <figcaption>مبخرات التكييف</figcaption>
-</figure>
-
-<figure>
-  <img src="evaporator-2.jpg" alt="مبخر تكييف من زاوية أخرى" loading="lazy">
-  <figcaption>مكوّنات أنظمة التبريد</figcaption>
-</figure>
-
-<figure>
-  <img src="receiver-drier-2.jpg" alt="فلتر مجفف تكييف" loading="lazy">
-  <figcaption>قطع تكييف متنوعة</figcaption>
-</figure>
-
-<figure>
-  <img src="compressor-2.jpg" alt="كمبروسر تكييف من الخلف" loading="lazy">
-  <figcaption>تفاصيل الكمبروسر</figcaption>
-</figure>
-
-<figure>
-  <img src="evaporator-3.jpg" alt="مبخر تكييف" loading="lazy">
-  <figcaption>مبادلات حرارية</figcaption>
-</figure>
-
-<figure>
-  <img src="evaporator-4.jpg" alt="قطعة من نظام التكييف" loading="lazy">
-  <figcaption>قطع أنظمة التكييف والتبريد</figcaption>
-</figure>
-      <div class="real-note"><b>ملاحظة:</b> الصور المعروضة هي الصور التي أرسلتها لقطع تحمل خلفيتها شعار النورس. يُرجى التأكد من أسماء القطع وتوفرها قبل اعتماد أي وصف تجاري.</div>
-    </div></section>
-
-    <section class="contact" id="contact"><div class="wrap"><div class="section-head"><span class="kicker">نحن هنا لمساعدتك</span><h2>تواصل مع شركة النورس</h2><p>للاستفسار عن الخدمات أو المنتجات، تواصل معنا مباشرة.</p></div>
-      <div class="contact-grid">
-        <div class="contact-box"><h3>معلومات التواصل</h3>
-          <a class="contact-line" href="tel:+962796070113"><span>📞</span><div><b>الهاتف</b><span dir="ltr">079 607 0113</span></div></a>
-          <a class="contact-line" href="https://wa.me/962796070113" target="_blank" rel="noopener"><span>💬</span><div><b>واتساب</b><span>اضغط هنا لبدء محادثة</span></div></a>
-          <div class="contact-line"><span>📍</span><div><b>العنوان</b><span>أبو علندا، عمّان، الأردن</span></div></div>
-          <a class="btn" style="margin-top:18px" href="https://www.google.com/maps/search/?api=1&query=%D8%A3%D8%A8%D9%88%20%D8%B9%D9%84%D9%86%D8%AF%D8%A7%20%D8%B9%D9%85%D8%A7%D9%86%20%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86" target="_blank" rel="noopener">افتح الموقع على الخرائط</a>
-        </div>
-        <iframe class="map" title="خريطة منطقة أبو علندا في عمّان" loading="lazy" src="https://maps.google.com/maps?q=%D8%A3%D8%A8%D9%88%20%D8%B9%D9%84%D9%86%D8%AF%D8%A7%2C%20%D8%B9%D9%85%D8%A7%D9%86%2C%20%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-      </div>
-    </div></section>
-  </main>
-  <footer><div class="wrap"><span>© <span id="year"></span> شركة النورس للتكييف والتبريد للشاحنات</span><span>أبو علندا، عمّان، الأردن</span></div></footer>
-  <a class="wa-float" href="https://wa.me/962796070113" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">واتساب ↗</a>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body>
-</html>
+<div class="top"><div class="wrap"><span>❄ حلول التكييف والتبريد للشاحنات</span><span>أبو علندا، عمّان — الأردن</span></div></div>
+<header><nav class="wrap"><a class="brand" href="#home"><img class="logo" src="logo.jpg" alt="شعار النورس" onerror="this.onerror=null;this.src='12.jpg'"><span>النورس<small style="display:block;font-size:.72rem;color:#60748c">للتكييف والتبريد للشاحنات</small></span></a><div class="links"><a href="#categories">الأصناف</a><a href="#catalog">المنتجات</a><a href="#about">عن الشركة</a><a class="btn" href="https://wa.me/962796070113" target="_blank">واتساب</a></div></nav></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid"><div><span>خبرة • جودة • حلول عملية</span><h1>تبريد يعتمد عليه،<br><span>لشاحنات تعمل بثقة</span></h1><p>كتالوج منتجات النورس للتكييف والتبريد للشاحنات. اختَر الصنف لتشاهد الصور المرتبطة به، وابحث عن القطعة أو استفسر عنها مباشرة.</p><div class="actions"><a class="btn" href="#categories">تصفّح الأصناف</a><a class="btn" href="tel:+962796070113">اتصل بنا</a></div></div><div><img src="condenser.jpg" alt="منتجات التكييف والتبريد" onerror="this.onerror=null;this.src='compressor-1.jpg'"></div></div></section>
+<section class="section" id="about"><div class="wrap"><div class="head"><strong>شركة النورس</strong><h2>قطع وحلول التكييف والتبريد</h2><p>تصفّح المنتجات حسب الصنف، وشاهد الصور المسجلة لكل فئة، ثم تواصل معنا للتأكد من التفاصيل والتوفر.</p></div><div class="features"><article class="feature"><h3>❄ أنظمة التبريد</h3><p>أصناف لاحتياجات تبريد الشاحنات والنقل المبرد.</p></article><article class="feature"><h3>🧰 قطع التكييف</h3><p>عرض القطع حسب الفئة والصور التابعة لها.</p></article><article class="feature"><h3>💬 تواصل مباشر</h3><p>استفسر عبر واتساب عن القطعة المطلوبة.</p></article></div></div></section>
+<section class="section tint" id="categories"><div class="wrap"><div class="head"><strong>تصفّح حسب الصنف</strong><h2>شو القطعة اللي بتدور عليها؟</h2><p>اضغط على الصنف لعرض المنتجات والصور المسجلة تحته.</p></div><div class="categories" id="categoriesGrid"></div></div></section>
+<section class="section" id="catalog"><div class="wrap"><div class="head"><strong>كتالوج المنتجات</strong><h2 id="catalogTitle">كل المنتجات</h2><p id="catalogDesc">اختَر فئة أو ابحث عن اسم المنتج.</p></div><div class="tools"><input id="search" class="search" type="search" placeholder="ابحث: كمبروسر، ثلاجة، مكثف..." aria-label="ابحث عن منتج"><button id="all" class="btn">كل المنتجات</button></div><div class="filters" id="filters"></div><div class="products" id="products"></div><div id="empty" class="empty" hidden>ما لقينا نتائج. جرّب كلمة ثانية أو اختَر فئة ثانية.</div></div></section>
+<section class="section contact" id="contact"><div class="wrap"><div class="head"><strong style="color:#76d4ff">تواصل معنا</strong><h2>شركة النورس للتكييف والتبريد للشاحنات</h2><p>للتأكد من نوع القطعة وتوفرها، تواصل معنا مباشرة.</p></div><div class="contact-grid"><div class="contact-box"><h3>معلومات التواصل</h3><p>📞 <a href="tel:+962796070113">079 607 0113</a></p><p>💬 <a href="https://wa.me/962796070113" target="_blank">راسلنا عبر واتساب</a></p><p>📍 أبو علندا، عمّان، الأردن</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Abu+Alanda+Amman+Jordan" target="_blank">افتح الخرائط</a></div><iframe class="map" title="خريطة أبو علندا" loading="lazy" src="https://maps.google.com/maps?q=Abu%20Alanda%2C%20Amman%2C%20Jordan&z=13&output=embed"></iframe></div></div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> شركة النورس للتكييف والتبريد للشاحنات — عمّان، الأردن</div></footer><a class="wa" href="https://wa.me/962796070113" target="_blank">واتساب ↗</a>
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="modalbox"><div class="modalbar"><h3 id="modalTitle">صورة المنتج</h3><button class="close" id="close" aria-label="إغلاق">×</button></div><img id="modalImg" alt=""></div></div>
+<script>
+const products=[
+{name:"مكثف تكييف",category:"المكثفات",image:"condenser.jpg"},
+{name:"فلتر ومجفف تكييف",category:"الفلاتر والمجففات",image:"receiver-drier.jpg"},
+{name:"فلتر ومجفف تكييف — صورة ثانية",category:"الفلاتر والمجففات",image:"receiver-drier-2.jpg"},
+{name:"كمبروسر تكييف",category:"الكمبروسرات",image:"compressor-1.jpg"},
+{name:"كمبروسر تكييف — زاوية ثانية",category:"الكمبروسرات",image:"compressor-2.jpg"},
+{name:"مبخر تكييف",category:"المبخرات",image:"evaporator-1.jpg"},
+{name:"مبخر تكييف — صورة ثانية",category:"المبخرات",image:"evaporator-2.jpg"},
+{name:"مبخر تكييف — صورة ثالثة",category:"المبخرات",image:"evaporator-3.jpg"},
+{name:"مبخر تكييف — صورة رابعة",category:"المبخرات",image:"evaporator-4.jpg"}
+];
+const categories=[
+{name:"الكمبروسرات",cover:"compressor-1.jpg",desc:"كمبروسرات التكييف"},
+{name:"المكثفات",cover:"condenser.jpg",desc:"مكثفات التكييف"},
+{name:"المبخرات",cover:"evaporator-1.jpg",desc:"مبخرات التكييف"},
+{name:"الفلاتر والمجففات",cover:"receiver-drier.jpg",desc:"فلاتر ومجففات"},
+{name:"الثلاجات ووحدات التبريد",cover:"condenser.jpg",desc:"صور الثلاجات الفعلية تُضاف لهذه الفئة"},
+{name:"بخاخات ومواد التكييف",cover:"receiver-drier.jpg",desc:"صور البخاخات الفعلية تُضاف لهذه الفئة"},
+{name:"قطع أخرى",cover:"evaporator-4.jpg",desc:"قطع تكييف وتبريد متنوعة"}
+];
+const $=id=>document.getElementById(id);let active="الكل";const wa="https://wa.me/962796070113?text=";
+function img(src,alt){const i=document.createElement("img");i.src=src;i.alt=alt;i.loading="lazy";i.onerror=()=>{i.onerror=null;i.style.display="none"};return i}
+function renderCategories(){const grid=$("categoriesGrid");grid.innerHTML="";categories.forEach(c=>{const count=products.filter(p=>p.category===c.name).length;const b=document.createElement("button");b.className="category";b.type="button";b.append(img(c.cover,c.name));const body=document.createElement("div");body.className="body";const h=document.createElement("h3");h.textContent=c.name;const d=document.createElement("p");d.textContent=c.desc;const n=document.createElement("span");n.className="count";n.textContent=count+" صورة مسجلة";body.append(h,d,n);b.append(body);b.addEventListener("click",()=>select(c.name));grid.append(b)})}
+function renderFilters(){const f=$("filters");f.innerHTML="";["الكل",...categories.map(c=>c.name)].forEach(n=>{const b=document.createElement("button");b.className="filter"+(active===n?" active":"");b.textContent=n;b.type="button";b.onclick=()=>select(n);f.append(b)})}
+function render(){const q=$("search").value.trim().toLowerCase();const list=products.filter(p=>(active==="الكل"||p.category===active)&&(!q||(p.name+" "+p.category).toLowerCase().includes(q)));const grid=$("products");grid.innerHTML="";list.forEach(p=>{const card=document.createElement("article");card.className="product";const i=img(p.image,p.name);i.onclick=()=>openImage(p);const body=document.createElement("div");body.className="body";const h=document.createElement("h3");h.textContent=p.name;const d=document.createElement("p");d.textContent=p.category;const a=document.createElement("a");a.className="btn";a.textContent="استفسر عن القطعة";a.href=wa+encodeURIComponent("مرحبًا، أريد الاستفسار عن: "+p.name);a.target="_blank";a.rel="noopener";body.append(h,d,a);card.append(i,body);grid.append(card)});$("empty").hidden=list.length>0;$("catalogTitle").textContent=active==="الكل"?"كل المنتجات":active;$("catalogDesc").textContent=active==="الكل"?"اختَر فئة أو ابحث عن اسم المنتج.":"الصور المسجلة ضمن فئة "+active+".";renderFilters()}
+function select(n){active=n;$("search").value="";render();$("catalog").scrollIntoView({behavior:"smooth"})}
+function openImage(p){$("modalTitle").textContent=p.name;$("modalImg").src=p.image;$("modalImg").alt=p.name;$("modal").classList.add("open")}
+function close(){ $("modal").classList.remove("open");$("modalImg").src=""}
+$("close").onclick=close;$("modal").onclick=e=>{if(e.target===$("modal"))close()};document.onkeydown=e=>{if(e.key==="Escape")close()};$("search").oninput=()=>{active="الكل";render()};$("all").onclick=()=>{active="الكل";$("search").value="";render()};$("year").textContent=new Date().getFullYear();renderCategories();render();
+</script></body></html>
