@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
-<head> <link rel="icon" type="image/png" href="logo.png">
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#071d3b">
@@ -16,7 +16,7 @@
     .top{background:var(--navy);color:#d9eaff;font-size:.88rem;padding:8px 0}.top .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
     nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy);font-size:1.2rem}
-    .logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,#0d8ee8,#071d3b);display:grid;place-items:center;color:#fff;font-size:1.5rem;box-shadow:0 8px 22px #0878d133}
+    .logo{width:58px;height:58px;border-radius:12px;object-fit:contain;background:#fff;border:1px solid var(--line);padding:3px;box-shadow:0 8px 22px #0878d11c}
     .links{display:flex;gap:22px;align-items:center;font-size:.92rem;font-weight:700}.links a:hover{color:var(--blue)}
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border-radius:12px;background:var(--blue);color:#fff;font-weight:800;border:1px solid var(--blue);transition:.2s}
     .btn:hover{transform:translateY(-2px);filter:brightness(.96)}.btn.outline{background:transparent;color:#fff;border-color:#ffffff70}.btn.dark{background:var(--navy);border-color:var(--navy)}
@@ -37,21 +37,14 @@
     .wa-float{position:fixed;bottom:18px;left:18px;z-index:20;background:#20b765;color:#fff;padding:12px 17px;border-radius:999px;font-weight:800;box-shadow:0 8px 24px #0003}
     @media(max-width:850px){.hero-grid,.contact-grid{grid-template-columns:1fr}.hero-grid{padding:50px 0}.hero-photo img{height:300px}.features,.services,.gallery{grid-template-columns:repeat(2,1fr)}.links{gap:11px}.links a:not(.btn){display:none}}
     @media(max-width:560px){.features,.services,.gallery{grid-template-columns:1fr}.top .wrap{justify-content:center;text-align:center}.brand{font-size:1rem}.logo{width:42px;height:42px}.links .btn{padding:9px 12px;font-size:.82rem}section{padding:52px 0}.hero-photo img{height:240px}.card img,.gallery img{height:220px}}
-  </style> .company-logo {
-  width: 55px;
-  height: 55px;
-  object-fit: contain;
-  vertical-align: middle;
-  margin-left: 10px;
-}
+  </style>
 </head>
 <body>
   <div class="top"><div class="wrap"><span>❄ حلول التكييف والتبريد للشاحنات</span><span>أبو علندا، عمّان — الأردن</span></div></div>
   <header><nav class="wrap">
-    <a class="brand" href="#home"><span class="logo">❄</span><span>النورس<small style="display:block;font-size:.72rem;color:#60748c;font-weight:600">للتكييف والتبريد</small></span></a>
+    <a class="brand" href="#home"><img class="logo" src="images/logo.jpg" alt="شعار النورس"><span>النورس<small style="display:block;font-size:.72rem;color:#60748c;font-weight:600">للتكييف والتبريد</small></span></a>
     <div class="links"><a href="#services">خدماتنا</a><a href="#gallery">معرض الصور</a><a href="#about">عن الشركة</a><a class="btn" href="https://wa.me/962796070113?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85" target="_blank" rel="noopener">تواصل واتساب</a></div>
-  </nav></header> <img src="logo.png" alt="شعار النورس"
-     class="company-logo">
+  </nav></header>
 
   <main>
     <section class="hero" id="home"><div class="wrap hero-grid">
@@ -60,7 +53,7 @@
         <p>شركة النورس للتكييف والتبريد للشاحنات — حلول وخدمات في مجال أنظمة التكييف والتبريد، مع اهتمام بجودة العمل واحتياجات قطاع النقل.</p>
         <div class="actions"><a class="btn" href="https://wa.me/962796070113" target="_blank" rel="noopener">اطلب استفسارك عبر واتساب</a><a class="btn outline" href="tel:+962796070113">اتصل بنا الآن</a></div>
       </div>
-      <div class="hero-photo"><img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=85" alt="شاحنة نقل على الطريق — صورة توضيحية" loading="eager"><div class="photo-note">صورة توضيحية لقطاع النقل، وليست صورة من أعمال الشركة.</div></div>
+      <div class="hero-photo"><img src="images/condenser.jpg" alt="مكثف تكييف من منتجات النورس" loading="eager"><div class="photo-note">من صور قطع التكييف والتبريد التي زوّدنا بها المستخدم.</div></div>
     </div></section>
 
     <section id="about"><div class="wrap"><div class="section-head"><span class="kicker">النورس للتبريد</span><h2>حلول مصممة لاحتياجات النقل</h2><p>نعمل على تقديم تجربة واضحة للعملاء من خلال التواصل المباشر وفهم احتياجاتهم في التكييف والتبريد للشاحنات.</p></div>
@@ -73,19 +66,25 @@
 
     <section class="tint" id="services"><div class="wrap"><div class="section-head"><span class="kicker">ماذا نقدم؟</span><h2>الخدمات والمنتجات</h2><p>صور توضيحية للمجالات التي يمكن الاستفسار عنها. يرجى التواصل لتأكيد توفر المنتج أو الخدمة المطلوبة.</p></div>
       <div class="services">
-        <article class="card"><img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=80" alt="شاحنة نقل — صورة توضيحية" loading="lazy"><div class="card-body"><span class="tag">النقل المبرد</span><h3>حلول تبريد الشاحنات</h3><p>التعرّف على خيارات التبريد المناسبة للشاحنات واحتياجات نقل البضائع.</p></div></article>
-        <article class="card"><img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=900&q=80" alt="أعمال فنية في أنظمة التكييف — صورة توضيحية" loading="lazy"><div class="card-body"><span class="tag">تكييف وتبريد</span><h3>أنظمة التكييف</h3><p>استفسر عن مكوّنات أنظمة التكييف والتبريد المناسبة لاحتياجك.</p></div></article>
-        <article class="card"><img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=900&q=80" alt="معدات وأجزاء فنية — صورة توضيحية" loading="lazy"><div class="card-body"><span class="tag">قطع ومكوّنات</span><h3>قطع أنظمة التبريد</h3><p>أرسل نوع الشاحنة أو صورة القطعة المطلوبة ليسهل الاستفسار عنها.</p></div></article>
+        <article class="card"><img src="images/condenser.jpg" alt="مكثف تكييف" loading="lazy"><div class="card-body"><span class="tag">النقل المبرد</span><h3>حلول تبريد الشاحنات</h3><p>التعرّف على خيارات التبريد المناسبة للشاحنات واحتياجات نقل البضائع.</p></div></article>
+        <article class="card"><img src="images/compressor-1.jpg" alt="كمبروسر تكييف" loading="lazy"><div class="card-body"><span class="tag">تكييف وتبريد</span><h3>أنظمة التكييف</h3><p>استفسر عن مكوّنات أنظمة التكييف والتبريد المناسبة لاحتياجك.</p></div></article>
+        <article class="card"><img src="images/receiver-drier.jpg" alt="فلتر مجفف لنظام التكييف" loading="lazy"><div class="card-body"><span class="tag">قطع ومكوّنات</span><h3>قطع أنظمة التبريد</h3><p>أرسل نوع الشاحنة أو صورة القطعة المطلوبة ليسهل الاستفسار عنها.</p></div></article>
       </div>
     </div></section>
 
-    <section id="gallery"><div class="wrap"><div class="section-head"><span class="kicker">معرض الصور</span><h2>من عالم التبريد والنقل</h2><p>أضف صور منتجات النورس وأعمالها الفعلية هنا ليتعرّف العملاء على الشركة بشكل أفضل.</p></div>
+    <section id="gallery"><div class="wrap"><div class="section-head"><span class="kicker">معرض الصور</span><h2>من عالم التبريد والنقل</h2><p>مجموعة من صور قطع التكييف والتبريد التي زوّدنا بها المستخدم.</p></div>
       <div class="gallery">
-        <figure><img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=80" alt="شاحنة نقل — صورة توضيحية" loading="lazy"><figcaption>شاحنات النقل — صورة توضيحية</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=900&q=80" alt="معدات تكييف — صورة توضيحية" loading="lazy"><figcaption>أنظمة التكييف — صورة توضيحية</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=900&q=80" alt="مكوّنات فنية — صورة توضيحية" loading="lazy"><figcaption>المكوّنات الفنية — صورة توضيحية</figcaption></figure>
+        <figure><img src="images/condenser.jpg" alt="مكثف تكييف" loading="lazy"><figcaption>مكثفات التكييف</figcaption></figure>
+        <figure><img src="images/receiver-drier.jpg" alt="فلتر مجفف" loading="lazy"><figcaption>فلاتر ومجففات التكييف</figcaption></figure>
+        <figure><img src="images/compressor-1.jpg" alt="كمبروسر تكييف" loading="lazy"><figcaption>كمبروسرات التكييف</figcaption></figure>
+        <figure><img src="images/evaporator-1.jpg" alt="مبخر تكييف" loading="lazy"><figcaption>مبخرات التكييف</figcaption></figure>
+        <figure><img src="images/evaporator-2.jpg" alt="مبخر تكييف من زاوية أخرى" loading="lazy"><figcaption>مكوّنات أنظمة التبريد</figcaption></figure>
+        <figure><img src="images/receiver-drier-2.jpg" alt="فلتر مجفف تكييف" loading="lazy"><figcaption>قطع تكييف متنوعة</figcaption></figure>
+        <figure><img src="images/compressor-2.jpg" alt="كمبروسر تكييف من الخلف" loading="lazy"><figcaption>تفاصيل الكمبروسر</figcaption></figure>
+        <figure><img src="images/evaporator-3.jpg" alt="مبخر تكييف" loading="lazy"><figcaption>مبادلات حرارية</figcaption></figure>
+        <figure><img src="images/evaporator-4.jpg" alt="قطعة من نظام التكييف" loading="lazy"><figcaption>قطع أنظمة التكييف والتبريد</figcaption></figure>
       </div>
-      <div class="real-note"><b>مهم:</b> الصور الظاهرة حاليًا توضيحية من مصادر خارجية وليست صورًا مؤكدة لمنتجات النورس. أرسل صور الشاحنات أو القطع أو الأعمال الحقيقية، ويمكن استبدال الصور بها قبل نشر الموقع.</div>
+      <div class="real-note"><b>ملاحظة:</b> الصور المعروضة هي الصور التي أرسلتها لقطع تحمل خلفيتها شعار النورس. يُرجى التأكد من أسماء القطع وتوفرها قبل اعتماد أي وصف تجاري.</div>
     </div></section>
 
     <section class="contact" id="contact"><div class="wrap"><div class="section-head"><span class="kicker">نحن هنا لمساعدتك</span><h2>تواصل مع شركة النورس</h2><p>للاستفسار عن الخدمات أو المنتجات، تواصل معنا مباشرة.</p></div>
